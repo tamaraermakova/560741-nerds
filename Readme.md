@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Тамара Ермакова](https://up.htmlacademy.ru/htmlcss/20/user/560741).
-* Наставник: [Виктория Коваленко] (https://htmlacademy.ru/profile/id42638).
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
