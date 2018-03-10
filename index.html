@@ -10,26 +10,50 @@
                 <nav class="main-menu">
                     <img class="logo" src="img/nerds-logo.svg" width="160" height="65"  alt="Логотип магазина готовых шаблонов «Нёрдс»">
                     <ul class="main-navigation">
-                        <li><a href="information.html">Студия</a></li>
-                        <li><a href="customer-list.html">Клиенты</a></li>
-                        <li><a href="catalog.html">Магазин</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="information.html" aria-label="Ссылка на главную страницу">Студия</a></li>
+                        <li><a href="customer-list.html" aria-label="Ссылка на список клиентов">Клиенты</a></li>
+                        <li><a href="catalog.html" aria-label="Ссылка на каталог">Магазин</a></li>
+                        <li><a href="contacts.html" aria-label="Ссылка на адрес и телефон">Контакты</a></li>
                     </ul>
                     <ul class="user-cart">
-                        <li><a href="cart.html">Корзина</a></li>
+                        <li><a href="cart.html" aria-label="Ссылка на вход в карзину">Корзина</a></li>
                     </ul>
                 </nav>
             </header>
             
-            <main class="container">                
-                <section class="post">
-                    <!--Здесь будет карусель -->
-                    <h2 class="visually-hidden">Пост</h2>
-                    <p class="slogan">Долго, дорого, скрупулезно</p>
-                    <p class="information-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                    <div class="button">
-                        <a href="information-post.html">Узнать больше</a>
+            <main class="container">
+                <section class="posts-about-us">                    
+                    <div class="layer-first">
+                        <input class="layer-first" type="radio" name="posts" id="slider-first" value="slider-1" checked>
+                        <label class="visually-hidden" for="slider-first">Выбрана первая статья о магазине готовых шаблонов «Нёрдс»</label>                        
+                        <h2 class="visually-hidden">Первая статья о магазине готовых шаблонов «Нёрдс»</h2>
+                        <p class="slogan">Долго, дорого, скрупулезно</p>
+                        <p class="information-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                        <div class="button">
+                            <a href="information-post-1.html" aria-label="Ссылка на более подробную информацию">Узнать больше</a>
+                        </div>
                     </div>
+                    <div class="layer-second">
+                        <input class="layer-second" type="radio" name="posts" id="slider-second" value="slider-2">
+                        <label class="visually-hidden" for="slider-second">Переход на вторую статью о магазине готовых шаблонов «Нёрдс»</label>                        
+                        <h2 class="visually-hidden">Вторая статья о магазине готовых шаблонов «Нёрдс»</h2>
+                        <p class="slogan">Любим математику как никто другой</p>
+                        <p class="information-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                        <div class="button">
+                            <a href="information-post-2.html" aria-label="Ссылка на более подробную информацию">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="layer-third">
+                    <input class="layer-third" type="radio" name="posts" id="slider-third" value="slider-3">
+                        <label class="visually-hidden" for="slider-third">Переход на третью статью о магазине готовых шаблонов «Нёрдс»</label> 
+                        <h2 class="visually-hidden">Третья статья о магазине готовых шаблонов «Нёрдс»</h2>
+                        <p class="slogan">Только ночь, только хардкор</p>
+                        <p class="information-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                        <div class="button">
+                            <a href="information-post-3.html" aria-label="Ссылка на более подробную информацию">Узнать больше</a>
+                        </div>
+                    </div>                                   
+                    
                 </section>
                 <section class="product">
                     <h2 class="visually-hidden">Перечень услуг</h2>
@@ -84,22 +108,22 @@
                 <aside class="partners">
                     <ul class="partners-list">
                         <li class="partners-list-item">
-                            <a href="https://htmlacademy.ru/intensive/htmlcss">
+                            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на партнера веб-студии - «html academy»">
                                 <img src="img/logo-1.png" width="199" height="68" alt="сайт «html academy»">
                             </a>
                         </li>
                         <li class="partners-list-item">
-                            <a href="https://barbershop-borodinski.ru">
+                            <a href="https://barbershop-borodinski.ru" aria-label="Ссылка на партнера веб-студии - Барбершоп «Borodinski»">
                                 <img src="img/logo-2.png" width="209" height="87" alt="сайт Барбершоп «Borodinski»">
                             </a>
                         </li>
                         <li class="partners-list-item">
-                            <a href="https://pink.ru">
+                            <a href="https://pink.ru" aria-label="Ссылка на приложение «Pink»">
                                 <img src="img/logo-3.png" width="185" height="52" alt="Приложение «Pink»">
                             </a>
                         </li>
                         <li class="partners-list-item">
-                            <a href="https://mishka.ru">
+                            <a href="https://mishka.ru" aria-label="Ссылка на партнера веб-студии - интерент-магазин «Mishka»">
                                 <img src="img/logo-4.png" width="173" height="84" alt="интерент-магазин «Mishka»">
                             </a>
                         </li>
@@ -123,17 +147,25 @@
                 </section>
                 <div class="footer-social">
                     <ul>
-                        <li><a class="social-button" href="#">Вконтакте</a></li>
-                        <li><a class="social-button" href="#">Фейсбук</a></li>
-                        <li><a class="social-button" href="#">Инстаграм</a></li>
+                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Вконтакте">Вконтакте</a></li>
+                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Фейсбук">Фейсбук</a></li>
+                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Инстаграм">Инстаграм</a></li>
                     </ul>
                     <b>Давайте дружить, это выгодно!</b>
                     <p>Скидка 10% для друзей из социальных сетей.</p>
                 </div>                 
             </footer>
             
-            <div class="feedback">
-            <!--Здесь будет форма-->
+            <div class="feedback-message">
+                <form class="feedback-opinion" method="post" action="https://echo.htmlacademy.ru">
+                    <label for="name-field">Ваше имя</label>
+                    <input type="text" name="user-name" id="name-field" placeholder="Имя Фамилия">
+                    <label for="email-field">Ваш e-mail</label>
+                    <input type="email" name="user-email" id="email-field" placeholder="email@example.com">
+                    <label for="text-field">Текст письма</label>    
+                    <textarea name="user-text" id="text-field" rows="10" cols="60">В свободной форме</textarea>
+                    <button type="submit" value="Отправить" aria-label="Кнопка отправки сообщения">Отправить</button>                 
+                </form>            
             </div>
                         
         </body>
