@@ -185,7 +185,26 @@ a {
 
 /*Стилизауия иконок соц. сетей*/
 
-.social-button {
+.footer-social .social-vk  {
+    background-image: url(../img/vk-icon.svg);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.footer-social .social-fb  {
+    background-image: url(../img/fb-icon.svg);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.footer-social .social-insta  {    
+    background-image: url(../img/insta-icon.svg);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.footer-social .social-button {
+    display: block;
     background-color: #e1e1e1;
 }
 
@@ -193,12 +212,12 @@ a {
     background-color: #e74246;
 }
 
-.social-button:active {
+.footer-social .social-button:active {
     background-color: #d7373b;
     opacity: 0.3;
 }
 
-.footer-social b {
+.footer-social .footer-social b {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
