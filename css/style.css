@@ -67,6 +67,11 @@ a {
     text-decoration-color: #fb565a;
 }
 
+.cart-navigation {
+    background-image: url(../img/cart-icon.svg);
+    background-repeat: no-repeat;   
+}
+
 .slogan {
     font-size: 55px;
     line-height: 55px;    
