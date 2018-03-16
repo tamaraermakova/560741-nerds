@@ -3,56 +3,67 @@
         <head>
             <meta charset="utf-8">
             <title>Магазин готовых шаблонов «Нёрдс»</title>
+            <link href="css/normalize.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet">
         </head>
         <body>
             
             <header class="main-header">                
                 <nav class="main-menu">
-                    <img class="logo" src="img/nerds-logo.svg" width="160" height="65"  alt="Логотип магазина готовых шаблонов «Нёрдс»">
+                    <a href="index.html">
+                        <img class="logo" src="img/nerds-logo.svg" width="160" height="65"  alt="Логотип магазина готовых шаблонов «Нёрдс»">
+                    </a>
                     <ul class="main-navigation">
-                        <li><a href="information.html" aria-label="Ссылка на главную страницу">Студия</a></li>
+                        <li><a href="index.html" aria-label="Ссылка на главную страницу">Студия</a></li>
                         <li><a href="customer-list.html" aria-label="Ссылка на список клиентов">Клиенты</a></li>
                         <li><a href="catalog.html" aria-label="Ссылка на каталог">Магазин</a></li>
                         <li><a href="contacts.html" aria-label="Ссылка на адрес и телефон">Контакты</a></li>
                     </ul>
-                    <ul class="user-cart">
-                        <li><a href="cart.html" aria-label="Ссылка на вход в карзину">Корзина</a></li>
+                    <ul class="cart-navigation">
+                        <li>
+                            <a href="cart.html" aria-label="Ссылка на вход в карзину">
+                                <img src="img/cart-icon.svg" alt="Корзина заказов">Корзина
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </header>
             
             <main class="container">
-                <section class="posts-about-us">                    
-                    <div class="layer-first">
-                        <input class="layer-first" type="radio" name="posts" id="slider-first" value="slider-1" checked>
-                        <label class="visually-hidden" for="slider-first">Выбрана первая статья о магазине готовых шаблонов «Нёрдс»</label>                        
-                        <h2 class="visually-hidden">Первая статья о магазине готовых шаблонов «Нёрдс»</h2>
-                        <p class="slogan">Долго, дорого, скрупулезно</p>
-                        <p class="information-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                        <div class="button">
-                            <a href="information-post-1.html" aria-label="Ссылка на более подробную информацию">Узнать больше</a>
+                <section class="slider"> 
+                    <div class="slider-main">
+                        <div class="slider-slides">
+                            <div class="layer-one">
+                                <input class="layer-first" type="radio" name="posts" id="slider-first" value="slider-1" checked>       <label class="visually-hidden" for="slider-first">Выбрана первая статья о магазине готовых шаблонов «Нёрдс»</label>
+                                <h2 class="visually-hidden">Первая статья о магазине готовых шаблонов «Нёрдс»</h2>                     <p class="slogan">Долго, дорого, <br>скрупулезно</p>
+                                <p class="information-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p> 
+                                <div class="button">
+                                    <a href="information-post-1.html" aria-label="Ссылка на более подробную информацию">Узнать больше</a>
+                                </div>
+                            </div>    
                         </div>
-                    </div>
-                    <div class="layer-second">
-                        <input class="layer-second" type="radio" name="posts" id="slider-second" value="slider-2">
-                        <label class="visually-hidden" for="slider-second">Переход на вторую статью о магазине готовых шаблонов «Нёрдс»</label>                        
-                        <h2 class="visually-hidden">Вторая статья о магазине готовых шаблонов «Нёрдс»</h2>
-                        <p class="slogan">Любим математику как никто другой</p>
-                        <p class="information-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                        <div class="button">
-                            <a href="information-post-2.html" aria-label="Ссылка на более подробную информацию">Узнать больше</a>
+                        <div class="slider-slides">
+                            <div class="layer-two">
+                                <input class="layer-second" type="radio" name="posts" id="slider-second" value="slider-2">             <label class="visually-hidden" for="slider-second">Переход на вторую статью о магазине готовых шаблонов «Нёрдс»</label>
+                                <h2 class="visually-hidden">Вторая статья о магазине готовых шаблонов «Нёрдс»</h2>                     <p class="slogan">Любим математику<br> как никто другой</p>
+                                <p class="information-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                                <div class="button">
+                                    <a href="information-post-2.html" aria-label="Ссылка на более подробную информацию">Узнать больше</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="layer-third">
-                    <input class="layer-third" type="radio" name="posts" id="slider-third" value="slider-3">
-                        <label class="visually-hidden" for="slider-third">Переход на третью статью о магазине готовых шаблонов «Нёрдс»</label> 
-                        <h2 class="visually-hidden">Третья статья о магазине готовых шаблонов «Нёрдс»</h2>
-                        <p class="slogan">Только ночь, только хардкор</p>
-                        <p class="information-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                        <div class="button">
-                            <a href="information-post-3.html" aria-label="Ссылка на более подробную информацию">Узнать больше</a>
-                        </div>
-                    </div>                                   
+                        <div class="slider-slides">
+                            <div class="layer-three">
+                                <input class="layer-third" type="radio" name="posts" id="slider-third" value="slider-3">               <label class="visually-hidden" for="slider-third">Переход на третью статью о магазине готовых шаблонов «Нёрдс»</label>
+                                <h2 class="visually-hidden">Третья статья о магазине готовых шаблонов «Нёрдс»</h2>                     <p class="slogan">Только ночь,<br> только хардкор</p>
+                                <p class="information-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                                <div class="button">
+                                    <a href="information-post-3.html" aria-label="Ссылка на более подробную информацию">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>            
+                    </div>                                         
                     
                 </section>
                 <section class="product">
@@ -62,26 +73,26 @@
                             <img src="img/illustration-1.jpg" width="300" height="146" alt="Заказать веб-сайт">
                             <h3>Веб-сайты</h3>
                             <p class="information-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                            <div class="button"><a href="cart.html">Заказать</a></div>
+                            <div class="button"><a href="catalog.html">Заказать</a></div>
                         </li>
                         <li class="product-item">
                             <img src="img/illustration-2.jpg" width="300" height="146" alt="Заказать приложение">
                             <h3>Приложения</h3>
                             <p class="information-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-                            <div class="button"><a href="cart.html">Заказать</a></div>
+                            <div class="button"><a href="catalog.html">Заказать</a></div>
                         </li>
                         <li class="product-item">
                             <img src="img/illustration-3.jpg" width="300" height="146"  alt="Заказать презентацию">
                             <h3>Презентация</h3>
                             <p class="information-text">Вы даже не подозреваете насколько вы изумительны!</p>
-                            <div class="button"><a href="cart.html">Заказать</a></div>
+                            <div class="button"><a href="catalog.html">Заказать</a></div>
                         </li>
                     </ul>
                 </section>
                 <section class="about-us">
                     <h2 class="visually-hidden">Информация  о магазине готовых шаблонов «Нёрдс» </h2>
                     <div class="about-us block">
-                        <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+                        <b>Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</b>
                         <p class="information-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет прквыше креатива. Работаем не покладая рук, как роботы.</p>
                         <p>Выполняем заказы на разработку:</p>
                         <ul class="item-list">
@@ -92,8 +103,8 @@
                     </div>
                     <img class="about-us picture" src="img/nerds-illustration.jpg" width="360" height="208" alt="Магазин готовых шаблонов «Нёрдс»">
                     <table class="table">
-                        <caption>С 2004 года любим точность во всем:</caption>
-                        <tr>
+                        <caption class="table-header">С 2004 года любим точность во всем:</caption>
+                        <tr class="stats">
                             <td>146<sup>%</sup></td>
                             <td>100<sup>%</sup></td>
                             <td>50<sup>%</sup></td>
@@ -140,16 +151,22 @@
                         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 16/8<br>
                         <p class="contacts-phone">
                         тел. +7 (812) 275-75-75</p>
+                        <div class="button">
+                            <a href="#" aria-label="Ссылка на на форму для обратной связи">Напишите нам</a>    
+                        </div>
                     </div>                    
                     <div class="map">
                         <img src="img/map.jpg" width="1440" height="416" alt="Карта проезда к магазину готовых шаблонов «Нёрдс»">
                     </div>                                                           
                 </section>
                 <div class="footer-social">
-                    <ul>
-                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Вконтакте">Вконтакте</a></li>
-                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Фейсбук">Фейсбук</a></li>
-                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Инстаграм">Инстаграм</a></li>
+                    <ul class="social-navigation">
+                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Вконтакте">
+                            <img src="img/vk-icon.svg" width="26" height="15" alt="Логотип Вконтакте" > Вконтакте</a></li>
+                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Фейсбук">
+                            <img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Фейсбук" >Фейсбук</a></li>
+                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Инстаграм">
+                            <img src="img/insta-icon.svg" width="21" height="21" alt="Логотип Инстаграм" >Инстаграм</a></li>
                     </ul>
                     <b>Давайте дружить, это выгодно!</b>
                     <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -158,12 +175,16 @@
             
             <div class="feedback-message">
                 <form class="feedback-opinion" method="post" action="https://echo.htmlacademy.ru">
-                    <label for="name-field">Ваше имя</label>
-                    <input type="text" name="user-name" id="name-field" placeholder="Имя Фамилия">
-                    <label for="email-field">Ваш e-mail</label>
-                    <input type="email" name="user-email" id="email-field" placeholder="email@example.com">
-                    <label for="text-field">Текст письма</label>    
-                    <textarea name="user-text" id="text-field" rows="10" cols="60">В свободной форме</textarea>
+                    <fieldset class="message">
+                        <legend class="form-header">Напишите нам</legend>
+                        <label for="name-field">Ваше имя</label>
+                        <input type="text" name="user-name" id="name-field"  placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{1, }">
+                        <label for="email-field">Ваш e-mail</label>
+                        <input type="email" name="user-email" id="email-field" placeholder="email@example.com">
+                        <label for="text-field">Текст письма</label>
+                        <textarea name="user-text" id="text-field" rows="10" cols="60" placeholder="В свободной форме" required></textarea>
+                        <span class="modal-close">x</span>
+                    </fieldset>                    
                     <button type="submit" value="Отправить" aria-label="Кнопка отправки сообщения">Отправить</button>                 
                 </form>            
             </div>

@@ -3,20 +3,29 @@
         <head>
             <meta charset="utf-8">
             <title>Магазин готовых шаблонов «Нёрдс»</title>
+            <link href="css/normalize.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet">
         </head>
         <body>
             
-            <header class="main-header">                
+           <header class="main-header">                
                 <nav class="main-menu">
-                    <img class="logo" src="img/nerds-logo.svg" width="160" height="65"  alt="Логотип магазина готовых шаблонов «Нёрдс»">
+                    <a href="index.html">
+                        <img class="logo" src="img/nerds-logo.svg" width="160" height="65"  alt="Логотип магазина готовых шаблонов «Нёрдс»">
+                    </a>
                     <ul class="main-navigation">
-                        <li><a href="information.html" aria-label="Ссылка на главную страницу">Студия</a></li>
+                        <li><a href="index.html" aria-label="Ссылка на главную страницу">Студия</a></li>
                         <li><a href="customer-list.html" aria-label="Ссылка на список клиентов">Клиенты</a></li>
                         <li><a href="catalog.html" aria-label="Ссылка на каталог">Магазин</a></li>
                         <li><a href="contacts.html" aria-label="Ссылка на адрес и телефон">Контакты</a></li>
                     </ul>
-                    <ul class="user-cart">
-                        <li><a href="cart.html" aria-label="Ссылка на вход в карзину">Корзина</a></li>
+                    <ul class="cart-navigation">
+                        <li>
+                            <a href="cart.html" aria-label="Ссылка на вход в карзину">
+                                <img src="img/cart-icon.svg" alt="Корзина заказов">Корзина
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -43,7 +52,7 @@
                          <fieldset class="grid-list"> 
                              <legend class="visually-hidden">Сетка:</legend>
                              <h3>Сетка:</h3>
-                             <ul>
+                             <ul class="grid-navigation">
                                  <li>
                                      <input type="radio" id="filter-responsive" name="grid-group" value="responsive" checked>
                                      <label class="responsive-type" for="filter-responsive">Адаптивная</label>
@@ -93,36 +102,52 @@
                          <a class="sort-price" href="#" aria-label="Ссылка на отбор услуг по цене">По цене</a>
                          <a class="sort-type" href="#" aria-label="Ссылка на отбор услуг по типу услуг">По типу</a>
                          <a class="sort-name" href="#" aria-label="Ссылка на отбор услуг по названию услуг">По названию</a>
+                         <a class="arrow arrow-up" href="#" aria-label="Сортировать по возрастанию">По возрастанию</a>
+                         <a class="arrow arrow-down" href="#" aria-label="Сортировать по убыванию">По убыванию</a>
                      </p>
                  </div>
                  <section class="catalog">
                      <h2 class="visually-hidden">Каталог</h2>
                      <ul class="catalog-list">
                          <li class="catalog-item">
-                            <img src="img/img-sedona-catalog.jpg" width="360" height="576" alt="Образец сайта «Седона»">
-                            <a href="nerds-catalog.psd" aria-label="Ссылка на каталог"><span class="catalog-item-title">Sedona</span></a>
-                            <p class="catalog-item-annotation">Информационный сайт для туристов</p>
-                            <p class="catalog-item-price">9 900 руб.</p>
+                             <a href="#" aria-label="Ссылка на каталог">                                 
+                                 <img src="img/img-sedona-catalog.jpg" width="360" height="576" alt="Образец сайта «Седона»">
+                                 <h3 class="catalog-item-title">Sedona</h3>
+                             </a> 
+                             <div class="catalog-annotation">                                                            
+                                 <p class="catalog-item-annotation">Информационный сайт для туристов</p>
+                                 <a class="button" href="#">9 900 руб.</a>
+                             </div>                            
                          </li>
                          <li class="catalog-item">
-                             <a href="nerds-catalog.psd" aria-label="Ссылка на образец сайта «Pink»"><img src="img/img-pink-catalog.jpg" width="360" height="576" alt="Образец сайта «Pink»"></a>
+                             <a href="#" aria-label="Ссылка на образец сайта «Pink»">
+                                 <img src="img/img-pink-catalog.jpg" width="360" height="576" alt="Образец сайта «Pink»">
+                             </a>
                          </li>
                          <li class="catalog-item">
-                             <a href="nerds-catalog.psd" aria-label="Ссылка на образец сайта Барбершоп «Borodinski»"><img src="img/img-barbershop-catalog.jpg" width="360" height="576" alt="Образец сайта Барбершоп «Borodinski»"></a>
+                             <a href="#" aria-label="Ссылка на образец сайта Барбершоп «Borodinski»">
+                                 <img src="img/img-barbershop-catalog.jpg" width="360" height="576" alt="Образец сайта Барбершоп «Borodinski»">
+                             </a>
                          </li>
                          <li class="catalog-item">
-                             <a href="nerds-catalog.psd" aria-label="Ссылка на образец сайта «Mishki»"><img src="img/img-mishka-catalog.jpg" width="360" height="576" alt="Образец сайта «Mishki»"></a>
+                             <a href="#" aria-label="Ссылка на образец сайта «Mishki»">
+                                 <img src="img/img-mishka-catalog.jpg" width="360" height="576" alt="Образец сайта «Mishki»">
+                             </a>
                          </li>
                          <li class="catalog-item">
-                            <a href="nerds-catalog.psd" aria-label="Ссылка на образец сайта «A+»"><img src="img/img-aplus--catalog.jpg" width="360" height="576" alt="Образец сайта «A+»"></a>
+                            <a href="#" aria-label="Ссылка на образец сайта «A+»">
+                                <img src="img/img-aplus--catalog.jpg" width="360" height="576" alt="Образец сайта «A+»">
+                             </a>
                          </li>
                          <li class="catalog-item">
-                             <a href="nerds-catalog.psd" aria-label="Ссылка на образец сайта «Кваст"><img src="img/img-kvast-catalog.jpg" width="360" height="576" alt="Образец сайта «Кваст»"></a>
+                             <a href="#" aria-label="Ссылка на образец сайта «Кваст">
+                                 <img src="img/img-kvast-catalog.jpg" width="360" height="576" alt="Образец сайта «Кваст»">
+                             </a>
                          </li>
                      </ul>
                      <ul class="pagination-list">
-                         <li class="pagination-item">
-                             <a href="#" class="pagination-item-current" aria-label="Ссылка на первую страницу каталога">1</a>
+                         <li class="pagination-item pagination-item-current">
+                             <a href="catalog.html"  aria-label="Ссылка на первую страницу каталога">1</a>
                          </li>
                          <li class="pagination-item">
                              <a href="#" aria-label="Ссылка на вторую страницу каталога">2</a>
@@ -145,30 +170,40 @@
                         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 16/8<br>
                         <p class="contacts-phone">
                         тел. +7 (812) 275-75-75</p>
+                        <div class="button">
+                            <a href="#" aria-label="Ссылка на на форму для обратной связи">Напишите нам</a>    
+                        </div>
                     </div>                    
                     <div class="map">
                         <img src="img/map.jpg" width="1440" height="416" alt="Карта проезда к магазину готовых шаблонов «Нёрдс»">
                     </div>                                                           
                 </section>
                 <div class="footer-social">
-                    <ul>
-                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Вконтакте">Вконтакте</a></li>
-                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Фейсбук">Фейсбук</a></li>
-                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Инстаграм">Инстаграм</a></li>
+                    <ul class="social-navigation">
+                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Вконтакте">
+                            <img src="img/vk-icon.svg" width="26" height="15" alt="Логотип Вконтакте" > Вконтакте</a></li>
+                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Фейсбук">
+                            <img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Фейсбук" >Фейсбук</a></li>
+                        <li><a class="social-button" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Инстаграм">
+                            <img src="img/insta-icon.svg" width="21" height="21" alt="Логотип Инстаграм" >Инстаграм</a></li>
                     </ul>
                     <b>Давайте дружить, это выгодно!</b>
                     <p>Скидка 10% для друзей из социальных сетей.</p>
-                </div>                 
+                </div>                       
             </footer>
             
             <div class="feedback-message">
                 <form class="feedback-opinion" method="post" action="https://echo.htmlacademy.ru">
-                    <label for="name-field">Ваше имя</label>
-                    <input type="text" name="user-name" id="name-field" placeholder="Имя Фамилия">
-                    <label for="email-field">Ваш e-mail</label>
-                    <input type="email" name="user-email" id="email-field" placeholder="email@example.com">
-                    <label for="text-field">Текст письма</label>    
-                    <textarea name="user-text" id="text-field" rows="10" cols="60">В свободной форме</textarea>
+                    <fieldset class="message">
+                        <legend class="form-header">Напишите нам</legend>
+                        <label for="name-field">Ваше имя</label>
+                        <input type="text" name="user-name" id="name-field"  placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{1, }">
+                        <label for="email-field">Ваш e-mail</label>
+                        <input type="email" name="user-email" id="email-field" placeholder="email@example.com">
+                        <label for="text-field">Текст письма</label>
+                        <textarea name="user-text" id="text-field" rows="10" cols="60" placeholder="В свободной форме" required></textarea>
+                        <span class="modal-close">x</span>
+                    </fieldset>                    
                     <button type="submit" value="Отправить" aria-label="Кнопка отправки сообщения">Отправить</button>                 
                 </form>            
             </div>
