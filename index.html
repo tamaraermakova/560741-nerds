@@ -86,34 +86,38 @@
                             <div class="button"><a href="catalog.html">Заказать</a></div>
                         </li>
                     </ul>
-                </section>
+                </section>                
                 <section class="about-us">
+                    <div class="about-us container">
                     <h2 class="visually-hidden">Информация  о магазине готовых шаблонов «Нёрдс» </h2>
                     <div class="about-us block">
                         <b>Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</b>
-                        <p class="information-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет прквыше креатива. Работаем не покладая рук, как роботы.</p>
+                        <p class="about-us information-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет прквыше креатива. Работаем не покладая рук, как роботы.</p>
                         <p>Выполняем заказы на разработку:</p>
-                        <ul class="item-list">
+                        <ul class="about-us item-list">
                             <li>Веб-сайтов любой сложности</li>
                             <li>Мобильных приложений для iOS b Android</li>
                             <li>Слайдшоу и видео для корпоративных презентаций</li>
                         </ul>
                     </div>
-                    <img class="about-us picture" src="img/nerds-illustration.jpg" width="360" height="208" alt="Магазин готовых шаблонов «Нёрдс»">
-                    <table class="table">
-                        <caption class="table-header">С 2004 года любим точность во всем:</caption>
-                        <tr class="stats">
-                            <td>146<sup>%</sup></td>
-                            <td>100<sup>%</sup></td>
-                            <td>50<sup>%</sup></td>
-                        </tr>
-                        <tr>
-                            <td>Уровень самоотдачи</td>
-                            <td>Соблюдение сроков</td>
-                            <td>Минимальная пердоплата</td>
-                        </tr>
-                    </table>                    
-                </section>
+                    <div class="about-us statistic">
+                        <img class="about-us picture" src="img/nerds-illustration.jpg" width="360" height="208" alt="Магазин готовых шаблонов «Нёрдс»">
+                        <table class="about-us table">
+                            <caption class="table-header">С 2004 года любим точность во всем:</caption>
+                            <tr class="stats">
+                                <td>146<sup>%</sup></td>
+                                <td>100<sup>%</sup></td>
+                                <td>50<sup>%</sup></td>
+                            </tr>
+                            <tr>
+                                <td>Уровень самоотдачи</td>
+                                <td>Соблюдение сроков</td>
+                                <td>Минимальная пердоплата</td>
+                            </tr>
+                        </table>
+                    </div>
+                        </div>
+                </section>                    
                 <aside class="partners">
                     <ul class="partners-list">
                         <li class="partners-list-item">
@@ -166,8 +170,10 @@
                         <li><a class="social-button social-insta" href="#" aria-label="Сылка на страницу «Нёрдс» в социальной сети Инстаграм">
                             Инстаграм</a></li>
                     </ul>
-                    <b>Давайте дружить, это выгодно!</b>
-                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                    <div class="social-discount">
+                        <b>Давайте дружить, это выгодно!</b>
+                        <p>Скидка 10% для друзей из социальных сетей.</p>
+                    </div>
                 </div>               
             </footer>
             
@@ -175,13 +181,20 @@
                 <form class="feedback-opinion" method="post" action="https://echo.htmlacademy.ru">
                     <fieldset class="message">
                         <legend class="form-header">Напишите нам</legend>
-                        <label for="name-field">Ваше имя</label>
-                        <input type="text" name="user-name" id="name-field"  placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{1, }">
-                        <label for="email-field">Ваш e-mail</label>
-                        <input type="email" name="user-email" id="email-field" placeholder="email@example.com">
-                        <label for="text-field">Текст письма</label>
-                        <textarea name="user-text" id="text-field" rows="10" cols="60" placeholder="В свободной форме" required></textarea>
-                        <span class="modal-close">x</span>
+                        <div class="one">
+                            <label for="name-field">Ваше имя</label>
+                            <input type="text" name="user-name" id="name-field"  placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{1, }">                         
+                        </div>
+                        <div class="two">
+                            <label for="email-field">Ваш e-mail</label>
+                            <input type="email" name="user-email" id="email-field" placeholder="email@example.com">
+                        
+                        </div> 
+                        <div class="three">
+                            <label for="text-field">Текст письма</label>
+                            <textarea name="user-text" id="text-field" rows="10" cols="60" placeholder="В свободной форме" required></textarea>
+                        </div>                       
+                        <span class="modal-close">x</span>                           
                     </fieldset>                    
                     <button type="submit" value="Отправить" aria-label="Кнопка отправки сообщения">Отправить</button>                 
                 </form>            
